@@ -10,14 +10,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Document(collection = "conexiones")
-public class Conexion {
+@Document(collection = "connections_collection")
+public class ConnectionRecord {
 
     @Transient
-    public static final String SEQUENCE_NAME="conexion_sequence";
+    public static final String SEQUENCE_NAME="sequence";
 
     @Id
-    private int id;
-    private String timestampConexion;
-    private boolean hayConexion;
+    private Long id;
+    private String connectionTimeStamp;
+    private boolean wasConnected;
 }
