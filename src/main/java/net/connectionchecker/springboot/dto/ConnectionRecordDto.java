@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ConnectionRecordDto {
-    private Long id;
+    private String id;
     private String connectionTimeStamp;
     private boolean wasConnected;
 }

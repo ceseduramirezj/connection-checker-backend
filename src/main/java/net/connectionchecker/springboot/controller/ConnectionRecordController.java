@@ -2,7 +2,6 @@ package net.connectionchecker.springboot.controller;
 
 import net.connectionchecker.springboot.entity.ConnectionRecord;
 import net.connectionchecker.springboot.service.ConnectionRecordService;
-import net.connectionchecker.springboot.service.GeneratedSequenceService;
 import net.connectionchecker.springboot.dto.ConnectionRecordDto;
 
 import java.util.ArrayList;
@@ -20,12 +19,8 @@ public class ConnectionRecordController {
     @Autowired
     private ConnectionRecordService connectionRecordService;
 
-    @Autowired
-    private GeneratedSequenceService generatedSequenceService;
-
     @PostMapping("/insert")
     public ResponseEntity<ConnectionRecordDto> insert(@RequestBody ConnectionRecordDto connectionRecord){
-        connectionRecord.setId(generatedSequenceService.getSequenceNumber(ConnectionRecord.SEQUENCE_NAME));
         ConnectionRecordDto savedConnectionRecord = connectionRecordService.createConnectionRecord(connectionRecord);
         return new ResponseEntity<>(savedConnectionRecord, HttpStatus.CREATED);
     }
@@ -36,7 +31,6 @@ public class ConnectionRecordController {
         List<ConnectionRecordDto> savedConnectionRecords = new ArrayList<>();
 
         for(ConnectionRecordDto connectionRecord : connectionRecords){
-            connectionRecord.setId(generatedSequenceService.getSequenceNumber(ConnectionRecord.SEQUENCE_NAME));
             ConnectionRecordDto savedConnectionRecord = connectionRecordService.createConnectionRecord(connectionRecord);
             savedConnectionRecords.add(savedConnectionRecord);
         }
