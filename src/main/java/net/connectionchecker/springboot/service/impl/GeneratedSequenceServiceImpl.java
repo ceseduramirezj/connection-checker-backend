@@ -1,7 +1,7 @@
-package net.ejercicio.springboot.service.impl;
+package net.connectionchecker.springboot.service.impl;
 
-import net.ejercicio.springboot.entity.GeneratedSequence;
-import net.ejercicio.springboot.service.GeneratedSequenceService;
+import net.connectionchecker.springboot.entity.GeneratedSequence;
+import net.connectionchecker.springboot.service.GeneratedSequenceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;

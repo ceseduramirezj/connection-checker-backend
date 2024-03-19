@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>net.ejercicio</groupId>
-	<artifactId>springboot-ejercicio-connectionRecord</artifactId>
+	<artifactId>springboot-connection-checker-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-ejercicio-connectionRecord</name>
-	<description>Demo project for Spring Boot Restful Conexion</description>
+	<name>connection-checker-backend</name>
+	<description>Backend Connection Checker</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

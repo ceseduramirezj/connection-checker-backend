@@ -1,4 +1,4 @@
-package net.ejercicio.springboot.dto;
+package net.connectionchecker.springboot.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

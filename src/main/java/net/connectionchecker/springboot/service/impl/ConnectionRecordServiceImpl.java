@@ -1,9 +1,9 @@
-package net.ejercicio.springboot.service.impl;
+package net.connectionchecker.springboot.service.impl;
 
-import net.ejercicio.springboot.dto.ConnectionRecordDto;
-import net.ejercicio.springboot.entity.ConnectionRecord;
-import net.ejercicio.springboot.repository.ConnectionRecordRepo;
-import net.ejercicio.springboot.service.ConnectionRecordService;
+import net.connectionchecker.springboot.dto.ConnectionRecordDto;
+import net.connectionchecker.springboot.entity.ConnectionRecord;
+import net.connectionchecker.springboot.repository.ConnectionRecordRepo;
+import net.connectionchecker.springboot.service.ConnectionRecordService;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

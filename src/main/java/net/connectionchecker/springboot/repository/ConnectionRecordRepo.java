@@ -1,8 +1,8 @@
-package net.ejercicio.springboot.repository;
+package net.connectionchecker.springboot.repository;
 
 
+import net.connectionchecker.springboot.entity.ConnectionRecord;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import net.ejercicio.springboot.entity.ConnectionRecord;
 
 public interface ConnectionRecordRepo extends MongoRepository<ConnectionRecord, Long>{
 
