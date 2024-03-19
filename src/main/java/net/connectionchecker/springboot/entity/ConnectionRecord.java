@@ -1,4 +1,4 @@
-package net.ejercicio.springboot.entity;
+package net.connectionchecker.springboot.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

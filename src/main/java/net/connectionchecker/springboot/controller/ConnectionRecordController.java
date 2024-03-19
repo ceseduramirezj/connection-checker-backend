@@ -1,9 +1,9 @@
-package net.ejercicio.springboot.controller;
+package net.connectionchecker.springboot.controller;
 
-import net.ejercicio.springboot.dto.ConnectionRecordDto;
-import net.ejercicio.springboot.entity.ConnectionRecord;
-import net.ejercicio.springboot.service.ConnectionRecordService;
-import net.ejercicio.springboot.service.GeneratedSequenceService;
+import net.connectionchecker.springboot.entity.ConnectionRecord;
+import net.connectionchecker.springboot.service.ConnectionRecordService;
+import net.connectionchecker.springboot.service.GeneratedSequenceService;
+import net.connectionchecker.springboot.dto.ConnectionRecordDto;
 
 import java.util.ArrayList;
 import java.util.List;
