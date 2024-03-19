@@ -1,5 +1,0 @@
-spring:
-  data:
-    mongodb:
-      uri: mongodb+srv://user:1234@clustersito.w1jf2nr.mongodb.net/?retryWrites=true&w=majority&appName=clustersito
-      database: connection_records_db
